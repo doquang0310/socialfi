@@ -19,7 +19,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #923CD5 ;
+  background: #923cd5;
 }
 
 /* Handle on hover */
@@ -39,13 +39,16 @@ body {
   font-family: "CounterStreamDemo";
   font-style: normal;
   font-weight: 400;
-  font-size: 78px;
+  font-size: 55px;
   line-height: 111px;
   background: linear-gradient(265.3deg, #b069ff 5.74%, #00d8de 99.82%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  @media (max-width: 576px) {
+    display: block;
+  }
 }
 
 .text-special-no-color {
@@ -86,6 +89,12 @@ body {
   min-height: 100vh;
   padding-bottom: 200px;
   position: relative;
+  @media (max-width: 576px) {
+    background-size: auto;
+  }
+  @media (min-width: 576px ) and (max-width : 1289px) {
+    background-size: auto;
+  }
   &::before {
     position: absolute;
     bottom: 0px;
@@ -149,12 +158,24 @@ body {
         left: -10%;
         transform: translate(-50%, -50%);
         max-width: 500px;
+        @media (max-width: 576px) {
+          display: none;
+        }
+        @media (min-width: 576px ) and (max-width : 1289px) {
+            max-width: 200px;
+          }
       }
       .hero-cloud-right {
         position: absolute;
-        top: 80%;
-        right: -20%;
+        top: 90%;
+        right: -10%;
         max-width: 500px;
+        @media (max-width: 576px) {
+          display: none;
+        }
+        @media (min-width: 576px ) and (max-width : 1289px) {
+            max-width: 200px;
+          }
       }
     }
     .title-hero-section {
@@ -165,9 +186,18 @@ body {
       font-weight: 900;
       font-size: 80px;
       line-height: 98px;
+      @media (max-width: 576px) {
+        font-size: 55px;
+      }
     }
     .img-hero {
       max-width: 950px;
+      @media (max-width: 576px) {
+        max-width: 100%;
+      }
+      @media (min-width: 576px ) and (max-width : 1289px) {
+        max-width: 100%;
+      }
     }
     .descripttion-hero-section {
       font-family: "Montserrat";
@@ -185,6 +215,12 @@ body {
         top: 50%;
         left: 50%;
         max-width: 500px;
+        @media (max-width: 576px) {
+          display: none;
+        }
+        @media (min-width: 576px ) and (max-width : 1289px) {
+            display: none;
+          }
       }
       .one-function {
         width: 60%;
@@ -194,6 +230,15 @@ body {
         background: #44a5db;
         border-radius: 15px;
         margin-bottom: 100px;
+        @media (max-width: 576px) {
+          width: 100%;
+        }
+        @media (min-width: 576px ) and (max-width : 1289px) {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 0px;
+          }
+          
         h1 {
           font-family: "Montserrat";
           font-style: normal;
@@ -217,6 +262,9 @@ body {
       }
     }
     .one-learn-function {
+        @media (max-width: 576px) {
+            margin-bottom: 50px;
+          }
       h1 {
         font-family: "CounterStreamDemo";
         font-style: normal;
@@ -233,6 +281,19 @@ body {
         line-height: 32px;
         color: #ffffff;
       }
+      .btn-learnmore {
+        background: linear-gradient(263.12deg, #b069ff 6.84%, #00d8de 99.28%);
+        border-radius: 10px;
+        padding: 7px 20px;
+        color: white;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 32px;
+        border: none;
+        outline: none;
+      }
     }
   }
 }
@@ -243,19 +304,37 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
-  padding-bottom: 1300px;
+  padding-bottom: 200px;
+
+@media (min-width: 576px ) and (max-width : 1289px) {
+    padding-bottom: 0px;
+
+  }
+  @media (max-width: 576px) {
+    background-size: auto;
+  }
   .end-cloud-left {
     position: absolute;
     bottom: 90px;
     left: 10px;
     transform: translate(-50%, -50%);
     max-width: 500px;
+    @media (max-width: 576px) {
+      display: none;
+    }
+
   }
   .end-cloud-right {
     position: absolute;
-    bottom: 0px;
+    bottom: 200px;
     right: 0%;
     max-width: 500px;
+    @media (max-width: 576px) {
+      display: none;
+    }
+    @media (min-width: 576px ) and (max-width : 1289px) {
+        max-width: 300px;
+      }
   }
   &::before {
     transform: rotate(180deg);
@@ -287,6 +366,12 @@ body {
     .img-end {
       max-width: 1000px;
       margin-top: 100px;
+      @media (max-width: 576px) {
+        max-width: 100%;
+      }
+      @media (min-width: 576px ) and (max-width : 1289px) {
+        max-width: 100%;
+      }
     }
   }
 }
