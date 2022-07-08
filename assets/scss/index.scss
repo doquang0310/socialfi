@@ -92,7 +92,7 @@ body {
   @media (max-width: 576px) {
     background-size: auto;
   }
-  @media (min-width: 576px ) and (max-width : 1289px) {
+  @media (min-width: 576px) and (max-width: 1289px) {
     background-size: auto;
   }
   &::before {
@@ -122,7 +122,7 @@ body {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 26px;
+        font-size: 28px !important;
         line-height: 32px;
         color: white;
         padding: 5px 17px;
@@ -143,6 +143,8 @@ body {
       border: none;
       outline: none;
       padding: 5px 10px;
+      height: 80px;
+      width: 260px;
     }
   }
   .content-section {
@@ -152,6 +154,7 @@ body {
     z-index: 9;
     .wrap-cloud {
       position: relative;
+    
       .hero-cloud-left {
         position: absolute;
         top: 50%;
@@ -161,9 +164,9 @@ body {
         @media (max-width: 576px) {
           display: none;
         }
-        @media (min-width: 576px ) and (max-width : 1289px) {
-            max-width: 200px;
-          }
+        @media (min-width: 576px) and (max-width: 1289px) {
+          max-width: 200px;
+        }
       }
       .hero-cloud-right {
         position: absolute;
@@ -173,12 +176,16 @@ body {
         @media (max-width: 576px) {
           display: none;
         }
-        @media (min-width: 576px ) and (max-width : 1289px) {
-            max-width: 200px;
-          }
+        @media (min-width: 576px) and (max-width: 1289px) {
+          max-width: 200px;
+        }
       }
     }
+    .learn-more-first{
+      padding-top: 30px !important;
+    }
     .title-hero-section {
+
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       color: white;
       font-family: "Montserrat";
@@ -192,35 +199,39 @@ body {
     }
     .img-hero {
       max-width: 950px;
+
       @media (max-width: 576px) {
         max-width: 100%;
       }
-      @media (min-width: 576px ) and (max-width : 1289px) {
+      @media (min-width: 576px) and (max-width: 1289px) {
         max-width: 100%;
       }
     }
+    // .img-ellipse {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    // }
     .descripttion-hero-section {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
-      font-size: 40px;
+      font-size: 40px !important;
       line-height: 49px;
       color: white;
     }
+  
     .content-function {
       position: relative;
-      .img-function {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-        max-width: 500px;
-        @media (max-width: 576px) {
-          display: none;
-        }
-        @media (min-width: 576px ) and (max-width : 1289px) {
-            display: none;
+
+      .vr {
+        .custom-tablet-margin {
+          .custom-tablet-margin-tittle {
+            color: white !important;
           }
+          .custom-tablet-margin-img {
+          }
+        }
       }
       .one-function {
         width: 60%;
@@ -233,12 +244,12 @@ body {
         @media (max-width: 576px) {
           width: 100%;
         }
-        @media (min-width: 576px ) and (max-width : 1289px) {
-            width: 100%;
-            height: 100%;
-            margin-bottom: 0px;
-          }
-          
+        @media (min-width: 576px) and (max-width: 1289px) {
+          width: 100%;
+          height: 100%;
+          margin-bottom: 0px;
+        }
+
         h1 {
           font-family: "Montserrat";
           font-style: normal;
@@ -262,9 +273,9 @@ body {
       }
     }
     .one-learn-function {
-        @media (max-width: 576px) {
-            margin-bottom: 50px;
-          }
+      @media (max-width: 576px) {
+        margin-bottom: 50px;
+      }
       h1 {
         font-family: "CounterStreamDemo";
         font-style: normal;
@@ -306,9 +317,8 @@ body {
   position: relative;
   padding-bottom: 200px;
 
-@media (min-width: 576px ) and (max-width : 1289px) {
+  @media (min-width: 576px) and (max-width: 1289px) {
     padding-bottom: 0px;
-
   }
   @media (max-width: 576px) {
     background-size: auto;
@@ -322,7 +332,6 @@ body {
     @media (max-width: 576px) {
       display: none;
     }
-
   }
   .end-cloud-right {
     position: absolute;
@@ -332,9 +341,9 @@ body {
     @media (max-width: 576px) {
       display: none;
     }
-    @media (min-width: 576px ) and (max-width : 1289px) {
-        max-width: 300px;
-      }
+    @media (min-width: 576px) and (max-width: 1289px) {
+      max-width: 300px;
+    }
   }
   &::before {
     transform: rotate(180deg);
@@ -369,7 +378,7 @@ body {
       @media (max-width: 576px) {
         max-width: 100%;
       }
-      @media (min-width: 576px ) and (max-width : 1289px) {
+      @media (min-width: 576px) and (max-width: 1289px) {
         max-width: 100%;
       }
     }

@@ -145,6 +145,8 @@ body {
   border: none;
   outline: none;
   padding: 5px 10px;
+  height: 80px;
+  width: 260px;
 }
 #hero-section .content-section {
   text-align: center;
@@ -193,9 +195,13 @@ body {
   color: white;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 900;
-  font-size: 80px;
+  font-weight: 600;
+  font-size: 34px;
   line-height: 98px;
+}
+.title-hero-section-bring{
+  font-size: 78px;
+  color: white;
 }
 @media (max-width: 576px) {
   #hero-section .content-section .title-hero-section {
@@ -218,10 +224,11 @@ body {
 #hero-section .content-section .descripttion-hero-section {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 400;
+  font-size: 45px;
   line-height: 49px;
   color: white;
+  text-align: left;
 }
 #hero-section .content-section .content-function {
   position: relative;
@@ -292,9 +299,11 @@ body {
   font-family: "CounterStreamDemo";
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 34px;
   min-height: 70px;
   color: #ffffff;
+  text-align: left;
+  width: 44px;
 }
 #hero-section .content-section .one-learn-function p {
   font-family: "Montserrat";
@@ -303,6 +312,39 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #ffffff;
+  margin-top: 50px;
+  text-align: left;
+}
+.free-to-play{
+  font-size: 28px !important;
+  margin-bottom: -10px;
+}
+.custom-tablet-margin-img{
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+}
+.custom-tablet-margin-tittle{
+  color: white;
+  font-family: "Montserrat";
+font-size: 28px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.custom-tablet-margin{
+margin-bottom: 120px;
+}
+.learn-more-first{
+  margin-top: 100px !important;
+}
+.learn-more-second{
+  margin-top: 50px !important;
+}
+.learn-more-third{
+  margin-top: 50px !important;
 }
 #hero-section .content-section .one-learn-function .btn-learnmore {
   background: linear-gradient(263.12deg, #b069ff 6.84%, #00d8de 99.28%);
@@ -317,7 +359,54 @@ body {
   border: none;
   outline: none;
 }
+@media (max-width: 576px) {
+  #hero-section .content-section .one-learn-function-networks {
+    margin-bottom: 50px;
+  }
+}
+#hero-section .content-section .one-learn-function-networks  h1 {
+  font-family: "CounterStreamDemo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  min-height: 70px;
+  color: #ffffff;
 
+  width: 44px;
+}
+.one-learn-function-nft{
+  text-align: center !important;
+  padding-left: 170px;
+}
+#hero-section .content-section .one-learn-function-networks  p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+
+}
+#hero-section .content-section .one-learn-function-networks  .btn-learnmore {
+  background: linear-gradient(263.12deg, #b069ff 6.84%, #00d8de 99.28%);
+  border-radius: 10px;
+  padding: 7px 20px;
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  border: none;
+  outline: none;
+}
+.one-learn-function-live{
+  width: 450px !important;
+  font-size: 34px!important;
+}
+.one-learn-function-networks{
+  padding-left: 100px;
+}
 #end-section {
   min-height: 100vh;
   background: url("../images/bg-bot.png");
